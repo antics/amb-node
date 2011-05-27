@@ -1,0 +1,20 @@
+h1 { text-align: center }
+
+#vehicle-select {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#vehicle-select a {
+	float: left;
+	display: block;
+	width: 60px;
+	height: 60px;
+	margin: 0 5px 5px 0;
+	padding: 5px 0 0 5px;
+	background: black;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
