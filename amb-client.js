@@ -31,16 +31,10 @@ client.addListener("data", function(data) {
 	tick = data[4];
 	
 	if (data[0] == '@') {
-		console.log('Transponder: '+trsp);
-
 		if (ptck[trsp]) {
 			delta = tick - ptck[trsp];
 			
-			// Send transp, tick and delta to server
-			//socket.write(trsp+'\t'+tick+'\t'+delta);
-
-			console.log('Tick: '+tick);
-			console.log('Time: '+delta+'s');
+			console.log(trsp+'\t'+tick+'\t'+delta);
 		}
 		
 		ptck[trsp] = tick;
